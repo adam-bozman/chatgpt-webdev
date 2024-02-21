@@ -6,17 +6,18 @@
 }
 
 body, html {
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive, sans-serif; /* Fun font */
     line-height: 1.6;
+    background-color: #f4f4f4; /* Light background for the content */
 }
 
 /* Header and Navigation */
 header {
-    background: #333;
+    background: #6a1b9a; /* Rich purple */
     color: #fff;
     padding-top: 30px;
     min-height: 70px;
-    border-bottom: #0779e4 solid 3px;
+    border-bottom: #ffeb3b solid 4px; /* Bright yellow border */
 }
 
 header h1, header nav {
@@ -35,21 +36,34 @@ header nav ul li {
 header nav ul li a {
     color: #fff;
     text-decoration: none;
+    font-weight: bold; /* Make navigation text bold */
 }
 
 /* Main content */
 main {
     padding: 20px;
+    background-color: #fff; /* White background for readability */
+    border-radius: 8px; /* Rounded corners for the main content */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); /* Subtle shadow for depth */
+    margin: 20px;
 }
 
 main h2 {
     color: #333;
     margin-bottom: 20px;
+    font-size: 24px; /* Larger font size for headings */
+}
+
+/* Adjust paragraph styling */
+main p {
+    margin-bottom: 20px;
+    font-size: 18px; /* Increase font size for readability */
+    color: #555; /* Slightly darker font color for contrast */
 }
 
 /* Footer */
 footer {
-    background: #333;
+    background: #6a1b9a; /* Matching the header background */
     color: #fff;
     text-align: center;
     padding: 20px;
@@ -57,5 +71,9 @@ footer {
     left: 0;
     bottom: 0;
     width: 100%;
+}
+
+footer p {
+    margin: 0; /* Remove margin from footer paragraph */
 }
 
