@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Puzzle</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Puzzle Challenge</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Me</a></li>
+                <li><a href="puzzle.html">Puzzle</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Solve the Puzzle</h2>
+            <p>Can you solve this classic riddle? "What comes once in a minute, twice in a moment, but never in a thousand years?"</p>
+            <label for="puzzleAnswer">Your answer:</label>
+            <input type="text" id="puzzleAnswer" name="puzzleAnswer">
+            <button onclick="checkAnswer()">Submit</button>
+            <p id="answerResponse"></p>
+        </section>
+    </main>
+    <footer>
+        <p>Contact me at [your-email]@example.com</p>
+    </footer>
+    <script>
+        function checkAnswer() {
+            var userAnswer = document.getElementById('puzzleAnswer').value.toLowerCase();
+            var response = document.getElementById('answerResponse');
+            if(userAnswer === 'the letter m') {
+                response.innerHTML = 'Correct! Well done.';
+            } else {
+                response.innerHTML = 'Incorrect, try again!';
+            }
+        }
+    </script>
+</body>
+</html>
